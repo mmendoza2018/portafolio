@@ -1,0 +1,36 @@
+:root{
+ --color-principal: #ffff;
+ --color-secundario: #F11F1F;
+ --color-principal-dark:#1C2128;
+ --color-secundario-dark:#3A3B3C;
+}
+.bg-principal{
+    background-color: var(--color-principal);
+}
+.text-secundario{
+    color: var(--color-secundario);
+}
+.bg-secundario{
+    background-color: var(--color-secundario) !important;
+}
+.text-principal{
+    color: var(--color-principal);
+}
+.text-principal-dark{
+    color: var(--color-principal-dark);
+}
+.bg-principal-dark{
+    background-color: var(--color-principal-dark);
+}
+.btn-linkeding{
+    color: azure !important;
+    background-color: #0A66C2 !important;
+}
+.btn-facebook{
+    color: azure !important;
+    background-color: #4267B2 !important;
+}
+.btn-google{
+    color: azure !important;
+    background-color: #DB4A39 !important;
+}

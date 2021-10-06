@@ -1,0 +1,62 @@
+.nombreLogo{
+    font-family: 'Sedgwick Ave', cursive;
+}
+.nav-item .nav-link:hover{
+    color: var(--color-secundario) !important;
+}
+.box-item-aside{
+    background-color: rgb(219, 219, 219);
+    color: var(--color-secundario) !important;
+}
+.darkmode-principal{
+    color: var(--color-principal) !important ;
+    background-color: var(--color-principal-dark) !important ;
+}
+.darkmode-secundario{
+    color: aliceblue !important ;
+    background-color: var(--color-secundario-dark) !important ;
+}
+.btnDarkMode{
+    cursor: pointer;
+}
+.img-proyectos {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50px !important; 
+}
+.card-img-proyectos{
+    position: relative;
+    border-radius: 50px !important; 
+}
+.card-img-proyectos:hover .botones-detalle {
+    width: 100%;
+    left: 0;
+  }
+a i.icon:hover {
+    color: var(--color-secundario);
+}
+/* cajas de blog  */
+.contenedor {
+    position: relative;
+}
+  .botones-detalle {
+    position: absolute;
+    border-radius: 50px; 
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.582);
+    overflow: hidden;
+    width: 0;
+    height:100%;
+    transition: .5s ease;
+  }
+  
+  .contenedor:hover .botones-detalle {
+    width: 100%;
+    left: 0;
+  }
+.disabled-boton{
+    background-color: rgb(195, 194, 194) !important;
+    cursor: context-menu !important;
+}

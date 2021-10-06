@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MiguelMendoza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/img/M.png" sizes="16x16" type="image/svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+        <link rel="stylesheet" href="assets/css/loader.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body data-darkPrincipal>
+        <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-principal rounded-bottom rounded-3 shadow fixed-top" data-darkSecundario>
+                <div class="container-fluid">
+                  <a class="navbar-brand nombreLogo mx-auto index" data-darkSecundario href="#">MIGUEL MENDOZA</a>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                      <li class="nav-item ">
+                        <a class="nav-link index" data-darkSecundario aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link proyectos" data-darkSecundario aria-current="page" href="#">Proyectos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link habilidades" data-darkSecundario aria-current="page" href="#">Mis habilidades</a>
+                      </li>
+                      <li class="nav-item conoceme">
+                        <a class="nav-link conoceme" data-darkSecundario aria-current="page" href="#">Conoceme</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link contacto" data-darkSecundario aria-current="page" href="#">Contacto</a>
+                      </li>
+                    </ul> 
+                  </div>
+                    <span class="bg-dark btnDarkMode rounded-pill p-1 ms-3" id="btnDarkMode" href="#">🌙</span>
+                </div>
+              </nav>
+        </header>
+        <section id="seccionLoader">
+          <div class="loader loader-1">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+          </div>
+        </section> 
+        <main class="my-md-5 my-5 py-3" id="contenidoPrincipal">
+          <div class="row align-items-center justify-content-center animate__animated animate__fadeIn">
+            <div class="col-md-6 text-center text-sm-start">
+                <h1 class="text-secundario fw-bold">Programador web</h1>
+                <h3 class="fw-bold">Desarrollador de paginas y aplicaciones web, autodidacta, apasionado por la tecnologia. </h3>
+                <h4><u>Contacto</u></h4>
+                <a href="#" data-darkPrincipal class="text-principal-dark"><i class='icon bx bxl-facebook-circle bx-md'></i></a>
+                <a href="#" data-darkPrincipal class="text-principal-dark"><i class='icon bx bxl-linkedin-square bx-md'></i></a>
+                <a href="#" data-darkPrincipal class="text-principal-dark"><i class='icon bx bxl-google bx-md' ></i></a>
+                <a href="#" data-darkPrincipal class="text-principal-dark"><i class='icon bx bxl-github bx-md' ></i></a>
+            </div>
+            <div class="col-md-6 px-md-3 px-5">
+                <figure>
+                    <img src="assets/img/programando.png" alt="programando" class="img-fluid">
+                </figure>
+            </div>
+          </div>
+        </main>
+        <aside id="asideMenu"></aside>
+        <!-- modale -->
+        <!-- Button trigger modal -->
+<!-- Modal dplace -->
+    <div class="modal fade " id="modalOng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/ongDetalle1.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/ongDetalle2.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/ongDetalle3.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/ong10.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Sistema ERP de control, gestion de trabajadores y usuarios</b>
+                  <small class="fw-bold">Rol: </small>
+                  <span class="badge rounded-pill bg-primary text-light shadow">Full-stack</span>
+                  <small class="fw-bold">Modalidad: </small>
+                  <span class="badge rounded-pill bg-light text-dark shadow">Freelance</span>
+                </div>
+                <small class="fw-bold"> Modulos resaltantes</small>
+                  <small>
+                    <ul>
+                      <li>Control de documentación de los trabajadores.</li>
+                      <li>Manejo de roles autogestionable.</li>
+                      <li>Seguimiento de documentación de los usuarios.</li>
+                      <li>Control logistico(ingresos, salidas, tranferencias).</li>
+                      <li>Manejo de productos del inventario autogestionable.</li>
+                      <li>Control de prestamos.</li>
+                      <li>Control de movimientos.</li>
+                    </ul> 
+                  </small>
+                <small>Herramientas</small><br>
+                <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="php" class="text-principal-dark"><i class='bx bxl-php bx-sm'></i></a>
+                <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Jquery" class="text-principal-dark"><i class='bx bxl-jquery bx-sm' ></i></a>
+                <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Mysql" class="text-principal-dark"><i class='bx bxs-data bx-sm' ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal cr -->
+    <div class="modal fade " id="modalCr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselControlCr" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselControlCr"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/cr1.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/cr2.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/cr3.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselControlCr" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Consumo de la API de Clash Royale</b>
+                  <small class="fw-bold">Modalidad: </small>
+                  <span class="badge rounded-pill bg-light text-dark shadow">Proyecto personal</span>
+                </div>
+                 <small class="fw-bold">Funcionalidades resaltantes</small>
+                  <small>
+                    <ul>
+                      <li>Busqueda de estadisticas por TAG de jugador.</li>
+                      <li>Predicción de proximos cofres a recibir.</li>
+                      <li>Visualización y busqueda de clanes por nombre.</li>
+                      <li>Visualización y paginación de cartas generales del juego.</li>
+                      <li>Visualización de el top de los jugadores.</li>
+                    </ul>
+                  </small>
+                  <div class="row">
+                    <div class="col">
+                      <small>Herramientas</small><br>
+                      <a href="#" data-darkPrincipal  data-bs-toggle="tooltip" data-bs-placement="top" title="html 5" class="text-principal-dark"><i class='bx bxl-html5 bx-sm'></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java Script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="css 3" class="text-principal-dark"><i class='bx bxl-css3 bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap 5" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                    </div>
+                    <div class="col  d-flex align-items-center">
+                    <a href="#"  target="_blank"><small>Ver Codigo en GIT HUB</small></a>
+                    </div>
+                   
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal cr -->
+    <div class="modal fade " id="modalDlace" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselControlDplace" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselControlDplace"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/dplace1.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/dplace6.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/dplace7.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/dplace10.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselControlDplace" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Front-end developer para una startup chilena</b>
+                  <small class="fw-bold">Rol: </small>
+                  <span class="badge rounded-pill bg-primary text-light shadow">Front-end</span>
+                </div>
+                 <small class="fw-bold">Labores desempeñadas</small>
+                  <small>
+                    <ul>
+                      <li>Diseño y maquetación de las vistas asignadas.</li>
+                      <li>implementación de responsive design.</li>
+                      <li>implementación del concepto movile first.</li>
+                      <li>Manejo de git, bit Bucket y jira.</li>
+                      <li>Aplicación de la metodologia Scrum.</li>
+                    </ul>
+                  </small>
+                  <div class="row">
+                    <div class="col">
+                      <small>Herramientas</small><br>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="html 5" class="text-principal-dark"><i class='bx bxl-html5 bx-sm'></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java Script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Css 3" class="text-principal-dark"><i class='bx bxl-css3 bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap 5" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Git" class="text-principal-dark"><i class='bx bxl-git bx-sm' ></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal toyota -->
+    <div class="modal fade " id="modalToyota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselControlToyota" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselControlToyota"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/toyota5.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/toyota6.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item  ratio ratio-16x9">
+                          <img src="assets/img/toyota7.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselControlToyota" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Replica de la pagina de Toyota</b>
+                  <small class="fw-bold">Modalidad: </small>
+                  <span class="badge rounded-pill bg-light text-dark shadow">Proyecto personal</span>
+                </div>
+                 <small class="fw-bold">Secciones resaltantes</small>
+                  <small>
+                    <ul>
+                      <li>Responsive design.</li>
+                      <li>implementación de scripts para mejor interactividad con la barra de navegación</li>
+                    </ul>
+                  </small>
+                  <div class="row">
+                    <div class="col">
+                      <small>Herramientas</small><br>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="html 5" class="text-principal-dark"><i class='bx bxl-html5 bx-sm'></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java Script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Css 3" class="text-principal-dark"><i class='bx bxl-css3 bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap 5" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Modal stripe -->
+     <div class="modal fade " id="modalStripe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselControlStripe" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselControlStripe"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item ratio ratio-16x9">
+                          <img src="assets/img/stripe1.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/stripe2.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item  ratio ratio-16x9">
+                          <img src="assets/img/stripe3.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselControlStripe" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Integracion de pasarela de pagos con Stripe</b>
+                  <small class="fw-bold">Modalidad: </small>
+                  <span class="badge rounded-pill bg-light text-dark shadow">Proyecto personal</span>
+                </div>
+                 <small class="fw-bold">Funcionalidades resaltantes</small>
+                  <small>
+                    <ul>
+                      <li>Creación de productos.</li>
+                      <li>obtención del token de verificacion con Stripe.</li>
+                      <li>implementación de script para la conexion con la API de stripe.</li>
+                      <li>renderizacion de productos en la página.</li>
+                      <li>envio de datos a stripe para la realización del pago.</li>
+                    </ul>
+                  </small>
+                  <div class="row">
+                    <div class="col">
+                      <small>Herramientas</small><br>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="html 5" class="text-principal-dark"><i class='bx bxl-html5 bx-sm'></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java Script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Stripe" class="text-principal-dark"><i class='bx bxl-stripe bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap 5" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal emp -->
+    <div class="modal fade " id="modalEmp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-body rounded-3" data-darkPrincipal>  
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                
+                <div id="carouselControlEmp" class="carousel slide" data-bs-ride="carousel">
+                  <div class="row align-items-center gx-0">
+                    <div class="col-1">
+                      <a class="" type="button" data-bs-target="#carouselControlEmp"  data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-principal-dark' data-darkPrincipal ></i>
+                      </a>
+                    </div>
+                    <div class="col-10">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active ratio ratio-16x9">
+                          <img src="assets/img/emp1.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item  ratio ratio-16x9">
+                          <img src="assets/img/emp2.PNG" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item  ratio ratio-16x9">
+                          <img src="assets/img/emp3.PNG" class="img-fluid" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <a class="float-end" type="button" data-bs-target="#carouselControlEmp" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-principal-dark' data-darkPrincipal></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="text-center">
+                  <b class="mx-auto mb-2 d-block">Sistema ERP de control, gestión de equipos y usuarios</b>
+                  <small class="fw-bold">Rol: </small>
+                  <span class="badge rounded-pill bg-primary text-light shadow">Full-stack</span>
+                  <small class="fw-bold">Modalidad: </small>
+                  <span class="badge rounded-pill bg-light text-dark shadow">Freelance</span>
+                </div>
+                 <small class="fw-bold">Funcionalidades resaltantes</small>
+                  <small>
+                    <ul>
+                      <li>Envio de documentos adjuntos por correo.</li>
+                      <li>Manejo de roles autogestionable.</li>
+                      <li>Seguimiento de documentación de los usuarios.</li>
+                      <li>Reconocimiento QR de los equipos.</li>
+                      <li>Consola de alertas.</li>
+                      <li>Manejo de fechas respecto a vencimiento de equipos.</li>
+                    </ul>
+                  </small>
+                  <div class="row">
+                    <div class="col">
+                      <small>Herramientas</small><br>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="php" class="text-principal-dark"><i class='bx bxl-php bx-sm'></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Java script" class="text-principal-dark"><i class='bx bxl-javascript bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Jquery" class="text-principal-dark"><i class='bx bxl-jquery bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" class="text-principal-dark"><i class='bx bxl-bootstrap bx-sm' ></i></a>
+                      <a href="#" data-darkPrincipal data-bs-toggle="tooltip" data-bs-placement="top" title="Mysql" class="text-principal-dark"><i class='bx bxs-data bx-sm' ></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- fin modales -->
+    </div>
+
+    <script src="assets/js/index.js" type="module"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
