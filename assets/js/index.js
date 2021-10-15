@@ -55,7 +55,7 @@ contenidoResponsivo("#asideMenu", "", `<footer id="footerMenu" data-darkSecundar
     </a>
     </div>
     <div class="col-3 col-md-3 col-lg-2 text-center">
-    <a href="#" data-darkSecundario class="btn btnAside px-1 box-item-aside">
+    <a href="#" data-darkSecundario class="btn btnAside px-1">
     <i class='bx bxs-user-circle bx-sm conoceme'></i>
 <small class="d-block py-0 px-0 conoceme">Conóceme</small>
 </a>
@@ -80,6 +80,8 @@ function cargarContenido(idContenedor, claseBoton, url) {
                 }
                 let respuesta = await peticion.text();
                 document.getElementById(idContenedor).innerHTML = respuesta;
+                document.getElementById("asideMenu").classList.remove("d-none");
+                document.getElementById("asideMenu").classList.add("d-block");
                 if (localStorage.getItem("darkMode") === "true") {
                     let listaElPrincipal = document.querySelectorAll("[data-darkPrincipal]"),
                         listaElSecundario = document.querySelectorAll("[data-darkSecundario]");

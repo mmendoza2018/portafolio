@@ -4,6 +4,7 @@ export default function direccionScroll() {
 window.addEventListener('scroll', function(){
   let valor= ((d.body.getBoundingClientRect()).top > scrollPos) ? "arriva" : "abajo";
   scrollPos = (d.body.getBoundingClientRect()).top;
+  console.log(valor);
   if (valor==="arriva") {
       d.getElementById("asideMenu").classList.remove("d-none");
       d.getElementById("asideMenu").classList.add("d-block");
