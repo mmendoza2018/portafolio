@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 })
 
 /* document.querySelector("a.y").style.cssText="color:white !important" */
-contenidoResponsivo("#asideMenu", "", `<footer id="footerMenu" data-darkSecundario class="fixed-bottom animate__animated  animate__fadeInUp rounded-top shadow-lg bg-principal mt-5">
+let contenidoAside = `<footer id="footerMenu" data-darkSecundario class="fixed-bottom animate__animated  animate__fadeInUp rounded-top shadow-lg bg-principal mt-5">
 <div class="row">
 <div class="col-3 col-md-3 col-lg-2 text-center">
 <a href="#" data-darkSecundario class="btn btnAside px-1">
@@ -67,7 +67,8 @@ contenidoResponsivo("#asideMenu", "", `<footer id="footerMenu" data-darkSecundar
     </a>
     </div>
     </div>
-    </footer>`);
+    </footer>`
+contenidoResponsivo("#asideMenu", "", contenidoAside );
 
 function cargarContenido(idContenedor, claseBoton, url) {
     document.addEventListener("click", async () => {
@@ -80,8 +81,7 @@ function cargarContenido(idContenedor, claseBoton, url) {
                 }
                 let respuesta = await peticion.text();
                 document.getElementById(idContenedor).innerHTML = respuesta;
-                document.getElementById("asideMenu").classList.remove("d-none");
-                document.getElementById("asideMenu").classList.add("d-block");
+                
                 if (localStorage.getItem("darkMode") === "true") {
                     let listaElPrincipal = document.querySelectorAll("[data-darkPrincipal]"),
                         listaElSecundario = document.querySelectorAll("[data-darkSecundario]");
