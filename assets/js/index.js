@@ -32,6 +32,7 @@ window.addEventListener("load", () => {
     darkMode("btnDarkMode");
     aplicarTooltips()
     progress();
+    alertCustomize()
     cargarContenido("contenidoPrincipal", "index", "principal.html")
     cargarContenido("contenidoPrincipal", "habilidades", "habilidades.html")
     cargarContenido("contenidoPrincipal", "conoceme", "conoceme.html")
@@ -104,6 +105,24 @@ function cargarContenido(idContenedor, claseBoton, url) {
         }
     })
 
+}
+function alertCustomize = () => {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'bottom-end',
+      showConfirmButton: false,
+      timer: 4000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Ultima actualizacion septiembre 15, 2021'
+    })
 }
 
 function envioForm() {
