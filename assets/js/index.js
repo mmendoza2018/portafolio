@@ -106,7 +106,7 @@ function cargarContenido(idContenedor, claseBoton, url) {
     })
 
 }
-function alertCustomize = () => {
+const alertCustomize = () => {
     const Toast = Swal.mixin({
       toast: true,
       position: 'bottom-end',
